@@ -19,7 +19,7 @@ font-size: 28px;
 
 body
 {
-  background-color: #000000;
+  background-color: #6f6f6f;
   padding: 50px;
 }
 
@@ -30,7 +30,7 @@ aside,
 footer
 {
   text-align: center;
-  background-color: #000000;
+  background-color: #808080;
   border-radius: 5px;
   padding: 30px;
 }
@@ -70,7 +70,7 @@ article
 article section
 {
   width: 100%;
-  background-color: #000000;
+  background-color: #9b3e3e;
   border-radius: 5px;
   margin: 25px 0;
   padding: 50px;
