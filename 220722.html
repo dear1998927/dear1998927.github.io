@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/1d491339ed.js" crossorigin="anonymous"></script>
+   
+    <title>CSS參考</title>
+    <style> 
+    
+    * {color:rgb(255, 6, 230);} /*通用選擇器(沒有特別標籤到都會以此為主)*/
+
+    /*「.」開頭,名稱可自訂,一張網頁可有多個 class 屬性值*/
+    .emText { color:red;}
+    .linda { color: #fcba03;}
+    .mary {color:green;}
+    .paul {color:black;}
+
+    /*「#」開頭,名稱可自訂,一張網頁只能有一個 ID 屬性值。*/
+    #latest { color:rgb(0, 72, 255);}
+
+    /*Type selectors(型態選擇器)*/
+    h1,h2,h3,h4,h5,h6{
+        font-family: 'Noto Sans TC', sans-serif;
+        color:pink;
+        }
+
+        p,a,span,li,label{
+        font-family: 'Open Sans', sans-serif;
+        color:rgb(255, 0, 225);
+        }
+    
+        div {color:black;}
+        div[title] {color:red;}
+        div[title=fishbecat] {color:green;}
+        div[title~=fishbecat’s] {color:blue;}
+
+        a { color:rgb(0, 0, 0);}
+        h1 a { color:red;}
+        #wrapper a { color:green;}
+
+        article > p{color:blue;}
+        .mary > p{color:blueviolet;}
+        #wa > p{color:aqua;}
+
+        h1 { color:red;}
+        h1 + p { color:green;}
+
+        h1, h2, p {color:rgb(255, 0, 0);}
+
+        p4{color:rgba(252,186,3,0.8);
+        font-size:100px;
+        letter-spacing: 10px;
+        line-height: 2.9;
+        font-weight: 800;
+        text-align:center;
+        font-family: '標楷體', sans-serif;
+        }
+        
+        div {
+        font-family:Arial,'Times New
+        Roman','Microsoft YaHei',SimHei; font:bold
+        12px/0.75em Arial,'Times New Roman','Microsoft
+        YaHei',SimHei;
+        font-size:400px;
+        line-height: 2.1;
+        }
+
+        /*全部設定字體*/
+        body { font-family: verdana, Times
+        New Roman, 新細明體, 微軟正黑體; }
+
+
+        div{
+        background : red;
+        width : 200px;
+        height : 200px;
+        overflow:hidden;
+        border:5px solid black;
+        padding:50px 10px 20px 40px;
+        margin:50px;
+        }   
+
+        div{
+        background : rgb(234, 255, 0);
+        width : 200px;
+        height : 200px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- 可以寫成第二種方式(全部寫在一起，但程式只會show最後一個)-->
+
+    <p class="emText">我是 帥哥</p>
+    <p class='linda mary paul'>123</p>
+    <p class='linda'>123</p>
+    <p class='paul'>123</p>
+
+    <p id="latest">此段會套用藍色</p>
+
+    <li><span>
+    <a href="portfolio.html"
+    target="_blank">哈囉哈囉</a>
+    </span></li>
+
+    <h8> 通用選擇器 </h8>
+
+    <div> 此區塊會套用黑色</div>
+    <div title="blog"> 此區塊會套用紅色</div>
+    <div title="fishbecat"> 此區塊會套用綠色</div>
+    <div title="fishbecat’s blog">此區塊會套用藍色</div>
+
+    <a> 只設定 a 標籤會套用黑色</a>
+    <h1><a>在 h1 裡的 a 標籤會套用紅色</a></h1>
+    
+    <div id="wrapper">
+    <a>在 ID=wrapper 裡的 a 標籤會套用綠色 </a>
+    </div>
+
+    <article><p> PPPPPPPPPP </p></article>
+    <p>AAAAAAAAAAA</p>
+    
+    <div class="mary">
+    <p>Mary</p></div>
+    
+    <div id="wa"><p>WA</p></div>
+
+    <h1>標題 1 會套用紅色</h1>
+    <p>跟 h1 相鄰的 p 會套用綠色</p>
+    <p>沒有跟 h1 相鄰的 p 會套用預設值</p>  
+
+    <h1>群組內的元素都套用紅色</h1>
+    <h2>群組內的元素都套用紅色</h2>
+    <p>群組內的元素都套用紅色</p>
+    <a>群組沒定義的元素不會變色</a>
+
+
+    <p4>天氣很好</p4>
+    <p4>Hello</p4>
+
+    <div>HHHHHHHHHHHHHHHHHHH</div>
+    <div>我我我我我我我我我我</div>
+
+    <!-- 個別設定字體 -->
+    <div><span style="font-family:
+    verdana, Times New Roman, 微軟正黑體,新細明體;">設定字型</span></div>
+    哈哈哈
+
+
+    <div>TEXT</div>
+    <div>哈哈哈哈</div>
+
+    <div style="border-
+    color:#aaaaee;border-style:solid;border-
+    width:3px;padding:5px;">
+    測試邊框寬度效果
+    </div>
+
+</body>
+</html>
